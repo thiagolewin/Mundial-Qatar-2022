@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Quicksand:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    max-width: 1920px;
+    min-width: 333px;
+    margin: auto;
+}
+hr {
+    width: 100%;
+}
+header {
+    position: relative;
+}
+.header__svg {
+    width: 100%;
+}
+.titulo {
+    position: absolute;
+    top: 50%;
+    margin-top: -7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo h1 {
+    font-size: 5em;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+.titulo hr {
+    width: 20%;
+    height: 2px;
+    color: #747474;
+}
+.grupo {
+    display: flex;
+}
+.pronosticar {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.pronosticar h2 {
+    height: 5vh;
+    margin-left: 3vw;
+    color: #428BCA;
+    font-size: 3em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+.pronosticos {
+    width: 85%;
+    display: flex;
+}
+.pronosticos h3 {
+    height: 3vh;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+}
+.pronosticos .local {
+    width: 25%;
+    text-align: end;
+}
+.pronosticos .local .pais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 5vh;
+}
+.pronosticos .local .pais h5 {
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.pronosticos .local .pais img {
+    width: 35px;
+    height: 23px;
+    margin-left: 0.5vw;
+}
+.pronosticos .medio {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pronosticos .medio .inputs{
+    height: 5vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+.pronosticos .medio .inputs input {
+    text-align: center;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    width: 40%;
+    height: 80%;
+}
+.pronosticos .visitante {
+    width: 20%;
+    text-align: start;
+}
+.pronosticos .visitante .pais {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5vh;
+}
+.pronosticos .visitante .pais h5 {
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+.pronosticos .visitante .pais img {
+    width: 35px;
+    height: 23px;
+    margin-right: 0.5vw;
+}
+.pronosticos .fecha,.pronosticos .resultados, .pronosticos .puntos {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.abajo {
+    display: flex;
+    align-items: center;
+    height: 3vh;
+}
+.abajo2 {
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+.pronosticos h4{
+    color: #6C6C6C;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+}
+.pronosticos .fecha h5 {
+    font-size: 1em;
+    color: #6C6C6C;
+    font-family: 'Quicksand', sans-serif;
+}
+.pronosticos .resultados h5 {
+    font-size: 1.5em;
+    color: #428BCA;
+    font-family: 'Poppins', sans-serif;
+}
+.pronosticos .puntos h5 {
+    font-size: 1.5em;
+    color: #6C6C6C;
+    font-family: 'Quicksand', sans-serif;
+}
+.fixture {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.fixture .abajo2:first-child {
+    height: 13vh;
+}
+.fixture h3 {
+    font-size: 1.8em;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.fixture h5 {
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    color: #6C6C6C;
+}
+.fixture__eleccion {
+    display: flex;
+    margin-top: 4.5vh;
+}
+.fixture__eleccion__button {
+    height: 3.5vh;
+    width: 60px;
+    margin-right: 1vw;
+    border-radius: 10px;
+    background-color: white;
+    border: 0.5px solid #000000;
+}
+.seleccionado {
+    background-color: #428BCA;
+    border: 0px solid #000000;
+    color: white;
+}
+.fixture__tabla {
+    display: flex;
+}
+.fixture__paises,.fixture__puntos,.fixture__ganados,.fixture__empatados,.fixture__perdidos,.fixture__gf,.fixture__gc,.fixture__dif {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fixture__paises .abajo2:not(:first-child) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: end;
+}
+.fixture__paises h5 {
+    color: #000000;
+    font-weight: 500;
+}
+.fixture__paises img {
+    margin-left: 1vw;
+    width: 50px;
+    height: 30px;
+}
+.fixture__puntos,.fixture__ganados,.fixture__empatados,.fixture__perdidos,.fixture__gf,.fixture__gc,.fixture__dif {
+    width: 10%;
+}
+.bottom {
+    display: flex;
+    align-items: flex-end;
+    height: 5vh; 
+}
+.fixture__ganados h3 {
+    color: #289B00;
+}
+.fixture__perdidos h3 {
+    color: #F00303;
+}
+/*CRUCES*/
+.segunda__fase {
+    display: flex;
+}
+.cruces2 {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    right: 0;
+}
+.cruces2 h5 {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.cruces {
+    height: 100vh;
+    display: flex;
+}
+.cruces .cruce, .final .cruce {
+    height: 10vh;
+    margin: 3vh 0;
+}
+.cruces .cruce .cruce__cuadrado, .final .cruce .cruce__cuadrado {
+    width: 12vw;
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+    align-items: center;
+    height: 50%;
+    background-color: #8d1c3d;
+    border-radius: 5px;
+}
+.cruces .cruce .cruce__cuadrado h5, .final .cruce .cruce__cuadrado h5{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+.cruces .cruce .cruce__cuadrado img, .final .cruce .cruce__cuadrado img {
+    width: 100%;
+    height: 100%;
+}
+.cruces .avos {
+    margin-left: 2vw;
+    height: 100%;
+}
+.cruces .avos .avos__parte {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cruces .tos {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.semi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -4vw;
+}
+.borderbottom {
+    border-bottom: 1px solid #000000;
+}
+.bordertop {
+    border-top: 1px solid #000000;
+}
+.final {
+    position: absolute;
+    left: 50%;
+    margin-left: -6vw;
+}
+.cuadradoGanador {
+    position: relative;
+    margin-top: 20vh;
+    top: 20%;
+    width: 21%;
+    display: grid;
+    grid-template-columns: 10fr 4fr;
+    align-items: center;
+    height: 10vh;
+    background-color: #fb8500;
+}
+.cuadradoGanador h5 {
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    cursor: pointer;
+}
+.cuadradoGanador img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1191px) {
+    .pronosticar {
+        width: 75%;
+    }
+    .fixture {
+        width: 25%;
+    }
+    .fixture__paises {
+        width: 25%;
+    }
+    .fixture__paises .abajo2:not(:first-child) {
+        display: flex;
+    }
+    .h5__paises {
+        display: none;
+    }
+    .segunda__fase {
+        font-size: 65%;
+    }
+}
+@media (max-width:1035px) {
+    .pronosticos .resultados, .pronosticos .puntos,.pronosticos .fecha {
+        width: 15%;
+    }
+    .pronosticos {
+        width: 100%;
+    }
+    .pronosticos .local {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pronosticos .visitante {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pronosticos .local .pais h5,.pronosticos .visitante .pais h5 {
+        display: none;
+    }
+    .fixture__tabla {
+        justify-content: flex-end;
+        margin-right: 2vw;
+    }
+    .pronosticos {
+        width: 90%;
+    }
+    .fixture__puntos, .fixture__ganados, .fixture__empatados, .fixture__perdidos, .fixture__gf, .fixture__gc, .fixture__dif {
+        display: none;
+    }
+    .fixture__puntos {
+        width: 25%;
+        display: flex;
+    }
+    .fixture__puntos hr {
+        width: 100%;
+    }
+}
+@media (max-width:765px) {
+    .pronosticos .resultados, .pronosticos .puntos,.pronosticos .fecha {
+        display: none;
+    }
+    .fixture {
+        display: none;
+    }
+    .pronosticar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pronosticar h2 {
+        margin-left: 0;
+    }
+    .pronosticos {
+        width: 50%;
+    }
+    .pronosticos .local, .pronosticos .medio, .pronosticos .visitante {
+        width: 33.33%;
+    }
+    .pronosticos .medio .inputs {
+        width: 100%;
+    }
+    .banner {
+        color: #289B00 !important;
+    }
+    .segunda__fase {
+        font-size: 45%;
+    }
+    .cruces .cruce, .final .cruce {
+        height: 7vh;
+    }
+}
+@media (max-width:604px) {
+    .pronosticos {
+        width: 80%;
+    }
+    .segunda__fase {
+        font-size: 40%;
+    }
+    .cruces .cruce, .final .cruce {
+        height: 5vh;
+    }
+}
+@media (max-width:424px) {
+    .pronosticos {
+        width: 100%;
+    }
+}
